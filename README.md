@@ -1,6 +1,6 @@
 # Portfolio-management-and-Investment-Theory
 
-## (Introduction)[1.%20Introduction/Introduction.md]
+## [Introduction](1.%20Introduction/Introduction.md)
 
 ## The Efficient Frontier
 
