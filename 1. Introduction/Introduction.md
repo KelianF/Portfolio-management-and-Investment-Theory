@@ -20,7 +20,7 @@ Log returns:
 
 
 
-![\Large R_t=ln(P_t+D_t)-ln(P_{t-1})](https://latex.codecogs.com/svg.latex?R_t=ln(P_t+D_t)-ln(P_{t-1}))
+![equation](https://latex.codecogs.com/svg.latex?R_t=ln(P_t+D_t)-ln(P_{t-1}))
 
 
 
