@@ -39,7 +39,37 @@ Properties of returns:
 
 ![equation](https://latex.codecogs.com/svg.latex?E(c(R_i))=cE(R_i))  ; with c is a constant
 
-![equation](https://latex.codecogs.com/svg.latex?)
+![equation](https://latex.codecogs.com/svg.latex?var(R_{1i}+R_{2i})=var(R_{1i})+var(R_{2i})+2cov(R_{1i}R_{2i}))
+
+![equation](https://latex.codecogs.com/svg.latex?var(c(R_1}))=c^2var(R_1))
+
+![equation](https://latex.codecogs.com/svg.latex?var(aR_{1}+bR_{2})=a^2var(R_1)+b^2var(R_2)+2abCov(R_1+R_2))
+
+
+Summary statistics of Returns
+
+In practice the distribution of the outcomes will not be known. The number of events is just the sample size N and the probability of an event is equal at ![equation](https://latex.codecogs.com/svg.latex?\frac{1}{N})
+
+It is easier to represent the possible outcomes by summary measures such as:
+
+- Mean
+
+- Standard Deviation, Variance, Mean Absolute Dispertion, Semivariance
+
+- Skewness
+
+- Kurtosis
+
+- Autocorrelation coefficient
+
+
+The Mean of Returns
+
+Average or mens are calculated as:
+
+![equation](https://latex.codecogs.com/svg.latex?R=\frac{1}{N}\sum_{t=1}^{N}R_t)
+
+With N the number of observation. The averages for each period can be very small and they can be easier to interpret if we consider returns over one year.
 
 
 
