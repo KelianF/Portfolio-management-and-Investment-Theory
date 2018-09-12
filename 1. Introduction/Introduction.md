@@ -71,8 +71,56 @@ Average or mens are calculated as:
 
 With N the number of observation. The averages for each period can be very small and they can be easier to interpret if we consider returns over one year.
 
+The historic annual compound rate ![equation](https://latex.codecogs.com/svg.latex?G) giving the same return after ![equation](https://latex.codecogs.com/svg.latex?\frac{N}{T}) years is definedby:
 
+![equation](https://latex.codecogs.com/svg.latex?(1+G)^{1/N}=\exp{NR})
 
+![equation](https://latex.codecogs.com/svg.latex?\frac{N}{T}ln(1+G)=NR)
+
+![equation](https://latex.codecogs.com/svg.latex?ln(1+G)=TR)
+
+![equation](https://latex.codecogs.com/svg.latex?G=\exp{TR}-1)
+
+Standard Deviation of Returns
+
+The standard deviation is the most commonly used measure of volatility of a time series. In finance it is used as a measure of risk.
+
+It is calculated as:
+
+![equation](https://latex.codecogs.com/svg.latex?\sigma=(\frac{1}{N-1}\sum_{t=1}^N(R_t-R)^2)^0.5)
+
+The variance is the second most commonly used measure of volatility:
+
+![equation](https://latex.codecogs.com/svg.latex?\sigma^2=(\frac{1}{N-1}\sum_{t=1}^N(R_t-R)^2))
+
+Mean absolute Dispersion of Returns
+
+![equation](https://latex.codecogs.com/svg.latex?MAD=\frac{1}{N-1}\sum_{t=1}^N|R_t-R|)
+
+Semi-Variance of Returns
+
+It is used to measure returns, however it only takes into account negarive returns.
+
+![equation](https://latex.codecogs.com/svg.latex?SV=\frac{1}{N-1}\sum_{t=1}^N(R_t-R)^2) if ![equation](https://latex.codecogs.com/svg.latex?(R_t-R)<0)
+
+Skeyness of returns
+
+Skewness statistics are used to assess the symmetry of the distribution.
+
+![equation](https://latex.codecogs.com/svg.latex?SKEW=\frac{1}{N-1}\sum_{t=1}^N\frac{(R_t-R)^3}{\sigma^3})
+
+If the returns are from a normal distribution the the skewness should be equal to 0.
+The standard error of the Skewness is equal to ![equation](https://latex.codecogs.com/svg.latex?(\frac{3}{N})), and this standard error is valid to use if the sample is from a normal distribution.
+
+Kurtosis of the Returns
+
+Kurtosis statistic is used to assess the thickness of the tails of the distribution.
+
+![equation](https://latex.codecogs.com/svg.latex?KURT=\frac{1}{N-1}\sum_{t=1}^N\frac{(R_t-R)^4}{\sigma^4})
+
+If the returns are from a normal distribution the Kurtosis should be equal to 3. High value of Kurt means fatter tails. 
+
+Autocorrelation of Returns
 
 
 
