@@ -122,12 +122,45 @@ If the returns are from a normal distribution the Kurtosis should be equal to 3.
 
 Autocorrelation of Returns
 
+The correlation between returns separated by a lag of ![equation](https://latex.codecogs.com/svg.latex?\tau) is used to measure persistence and is calculated by the sample correlation coefficient: 
+
+![equation](https://latex.codecogs.com/svg.latex?\rho_{\tau}=\frac{\sum^{N-\tau}_{t=1}{(R_t-\bar{R})(R_{t-\tau}-\bar{R})}}{\sum^N_{t=1}{(R_t-\bar{R})^2}})
+
+The null hypothesis of no serial correlation (white noise) can be tested using the ljung-box Q-statistic:
+
+![equation](https://latex.codecogs.com/svg.latex?Q=N(N+2)\sum_{j<M}{\frac{1}{N-j}}\rho^2_j) 
+; With ![equation](https://latex.codecogs.com/svg.latex?Q\sim\chi^2(M))
+and ![equation](https://latex.codecogs.com/svg.latex?M) the number of lags chosen
 
 
+Portfolio Return
+
+The expected return on a portfolio of asset is simply the weighted average of the expected returns on the individual assets:
+
+![equation](https://latex.codecogs.com/svg.latex?E(R_p)=\sum^N_{i=1}{R_i})
+
+Thus the mean return on a portfolio of assets is simply the weighted average of the mean return on the individual assets:
+
+![equation](https://latex.codecogs.com/svg.latex?\bar{R}_p=\sum^N_{i=1}{X_i\bar{R}_i})
 
 
+Portfolio Risk
 
+![equation](https://latex.codecogs.com/svg.latex?\sigma_p=(\sum^N_{i=1}{X^2_i\sigma^2_i}+\sum^N_{i=1}{\sum^N_{j=1}{X_iX_j\sigma_{ij}}})^{\frac{1}{2}})
 
+The correlation between two assets is related to the covariance
 
+![equation](https://latex.codecogs.com/svg.latex?-1<\rho_{ij}=\frac{\sigma_{ij}}{\sigma{i}\sigma{j}}<1)
 
+It is possible to reduce risk by adding more assets to a portfolio. 
+However, it is possible to ask the question: would it be possible to reduce the risk to zero by adding enough assets?
 
+We have the risk of a portfolio:
+
+![equation](https://latex.codecogs.com/svg.latex?\sigma^2_p=\frac{1}{N}\sum^N_{i=1}{\frac{\sigma^2_i}{N}}+\frac{N-1}{N}\sum^N_{i=1}\sum^N_{j=1}{\frac{\sigma_{ij}}{N(N-1)}})
+
+![equation](https://latex.codecogs.com/svg.latex?\sigma^2_p=\frac{1}{N}\bar{\sigma}^2_i+\frac{N-1}{N}\bar{\sigma}_{ij})
+
+= individual risk + covariance risk
+
+As ![equation](https://latex.codecogs.com/svg.latex?N\rightarrow\inf) then ![equation](https://latex.codecogs.com/svg.latex?\sigma^2_p\rightarrow\bar{\sigma}_{ij})
