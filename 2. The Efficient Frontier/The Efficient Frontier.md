@@ -21,3 +21,13 @@ This gives us:
 This gives us the hyperbola formula:
 
 ![equation](https://latex.codecogs.com/svg.latex?\sigma_p^2=\frac{R_p-R_2}{R_1-R_2}^2\sigma_1^2+(1-\frac{R_p-R_2}{R_1-R_2})^2\sigma^2+2(\frac{R_p-R_2}{R_1-R_2})(1-\frac{R_p-R_2}{R_1-R_2})\sigma_1\sigma_2\rho_{12})
+
+with: ![equation](https://latex.codecogs.com/svg.latex?\sigma_p=[X^2_1\sigma^2_1-(1-X_1)^2\sigma^2_2+2X_1(1-X_1)\sigma_1\sigma_2\rho_{12}]^2)
+
+It is possible to find what the Xi are that achieves minimum risk by differentiating ![equation](https://latex.codecogs.com/svg.latex?\sigma_p) with respect to ![equation](https://latex.codecogs.com/svg.latex?X1) and solve it.
+
+![equation](https://latex.codecogs.com/svg.latex?\frac{\partial\sigma_p}{\partial{X_1}}=\frac{\sigma^2}{2}[2X^2_1\sigma^2_1-2\sigma^2_2+2X_1\sigma^2_2+2\sigma_1\sigma_2\rho_{12}-4X_1\sigma_1\sigma_2\rho_{12}]=0)
+
+So:
+
+![equation](https://latex.codecogs.com/svg.latex?X_1=\frac{\sigma^2_2-\sigma_1\sigma_2\rho_{12}}{\sigma^2_1+\sigma^2_2-2\sigma_1\sigma_2\rho_{12}})
