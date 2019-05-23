@@ -1,4 +1,4 @@
-# Portfolio-management-and-Investment-Theory
+# Portfolio management and Investment Theory
 
 ## [Introduction](1.%20Introduction.md)
 
